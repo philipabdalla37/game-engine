@@ -6,7 +6,6 @@ import json
 class GPT_prompt_generator:
 
     output_prompts: list[str] = []
-
     def __init__(self, model = "gpt-5.2"):
         self.model = model
 
