@@ -6,13 +6,6 @@ import json
 class GPT_prompt_generator:
 
     output_prompts: list[str] = []
-    os.environ["OPENAI_API_KEY"] = "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"
-    OpenAI = OpenAI()
-    api_key = os.getenv("OPENAI_API_KEY")
-    client = OpenAI(
-    api_key= api_key,
-    language= "en"
-    )
 
     def __init__(self, model = "gpt-5.2"):
         self.model = model
